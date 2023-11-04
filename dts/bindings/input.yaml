@@ -1,0 +1,33 @@
+# Copyright (c) 2018, Linaro Limited
+# SPDX-License-Identifier: Apache-2.0
+
+description: GPIO input parent node
+
+compatible: "input"
+
+include: base.yaml
+
+properties:
+  #debounce-interval-ms:
+   # type: int
+    #default: 30
+   gpios:
+    type: phandle-array
+    required: true
+    description: |
+       Debouncing interval time in milliseconds.
+       If not specified defaults to 30.
+
+child-binding:
+  description: GPIO KEYS child node
+  properties:
+    gpios:
+      type: phandle-array
+      required: true
+   # label:
+    #  type: string
+     # description: Descriptive name of the key
+    #zephyr,code:
+     # type: int
+      #default: 0
+      #description: Key code to emit.
