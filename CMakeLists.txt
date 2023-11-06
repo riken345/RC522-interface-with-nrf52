@@ -26,6 +26,7 @@ target_sources(app PRIVATE components/oled_ssd1306/font8x8.c)
 target_sources(app PRIVATE components/oled_ssd1306/font10x16.c)
 target_sources(app PRIVATE components/oled_ssd1306/font15x24.c)
 target_sources(app PRIVATE components/oled_ssd1306/font20x32.c)
+target_sources(app PRIVATE components/rc522/rc522.c)
 
 target_sources(app PRIVATE components/meter_ade7593/ade7593.c)
 target_sources(app PRIVATE components/app_db/app_db.c)
