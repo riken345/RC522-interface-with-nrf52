@@ -39,8 +39,7 @@
 const struct device *spi_dev;
 
 static const struct spi_config spi_cfg = {
-    .operation = SPI_OP_MODE_MASTER | SPI_WORD_SET(8) | SPI_TRANSFER_MSB |
-                 SPI_MODE_CPHA,
+    .operation = SPI_OP_MODE_MASTER ,
     .frequency = 400000,
     .slave = 0,
     //.cs = &spim_cs,
